@@ -1,23 +1,24 @@
 //import package
-var mongodb=require('mongodb');
+const mongodb=require('mongodb');
 const express = require('express')
-var bodyParser = require('body-parser');
-var cors = require('cors');
-var crypto=require('crypto');
-var fs=require('fs');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const crypto=require('crypto');
+const fs=require('fs');
 //create express service
 const app = express()
 const port = 8000
-var urlencodedParser = bodyParser.urlencoded({ extended: false});
+const urlencodedParser = bodyParser.urlencoded({ extended: false});
+const mapRouters = require('./routers/MapRouters');
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }))
 // parse application/json
 app.use(bodyParser.json())
 //form 表單input必須加入name
-app.use(cors());
-
+app.use(cors({credentials: true, origin: 'http://localhost:8080'}));
+app.use(express.static('public'));
 //create mongpDB Client
-var MongoClient=mongodb.MongoClient;
+const MongoClient=mongodb.MongoClient;
 
 
 app.post('/login',urlencodedParser, (req, res) => {
@@ -31,11 +32,13 @@ app.post('/login',urlencodedParser, (req, res) => {
     else
         res.send("fail")
 })
-app.post('/mapSearch',urlencodedParser,(req,res)=>{
-  console.log(req.body);
-  res.send("successful")
-
+app.post('/test',urlencodedParser,(req,res)=>{
+  const data = fs.readFileSync('test.json', 'utf8')
+  console.log(data)
 })
+app.use('/maps',mapRouters);
+app.use('/maps',mapRouters)
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
+
