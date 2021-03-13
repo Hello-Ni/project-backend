@@ -18,10 +18,29 @@ class RTree{
         }
         else{
            bounds.children.forEach((child)=>{
-               console.log(child.boundary)
+               this.num++;
            })
-
+            console.log(this.num)
         }
+    }
+    searchTree(bounds,location,marks){
+        //console.log(bounds.boundary)
+        //the rectangle is intersected or not
+        if(parseFloat(location.left)>bounds.boundary.right || parseFloat(location.right)<bounds.boundary.left)
+            return;
+        if(parseFloat(location.top)<bounds.boundary.bottom || parseFloat(location.bottom)>bounds.boundary.top)
+            return;
+        if(bounds.children.length>0){
+            bounds.children.forEach((child)=>{
+                this.searchTree(child,location,marks)
+            })
+        }else{
+            let lng=bounds.boundary.left;
+            let lat=bounds.boundary.top;
+            marks.push({lng:lng,lat:lat})
+        }
+
+
     }
 }
 class Bound{
@@ -37,9 +56,11 @@ class Bound{
     }
     insert(x,y,type){
         //console.log(x+" "+y);
+        this.num++;
         if(this.contain_type==="point"){
             //insert in many point
-            let point={boundary: {left:x,right:x,top:y,bottom:y} };
+            let point=new Bound();
+            point.setBoundary({left:x,right:x,top:y,bottom:y} )
             this.children.push(point);
         }else{
             
@@ -75,11 +96,11 @@ class Bound{
             })
             
             if(this.children[idx].insert(x,y,type)){
-                let newChildren=this.children[idx].getSplitChildren();        
-                this.children.splice(idx);
+                let newChildren=this.children[idx].getSplitChildren();
+                this.children.splice(idx,1);
                 newChildren.forEach((child)=>{
                     this.children.push(child);
-                })
+                }) 
             }
                 
 
