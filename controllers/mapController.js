@@ -11,10 +11,11 @@ const map_search = (req,res)=>{
 const map_create=(req,res)=>{
     
     try {
-        const data=fs.readFileSync(path.join(__dirname,'../public/location2.json'),'utf-8');
+        const data=fs.readFileSync(path.join(__dirname,'../public/location.json'),'utf-8');
         let locations=JSON.parse(data);
-        RTree.dataBase.created(locations);
-        res.send({status:1})
+        let bound=RTree.dataBase.created(locations);
+        RTree.dataBase.visit(bound);
+        res.send({status:bound})
     } catch (error) {
         res.send({status:0})
     }
