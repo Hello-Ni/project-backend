@@ -5,8 +5,8 @@ class RTree{
         this.num=0;
     }
     created(locations){
-        locations.forEach(loc => {
-            let flag=  this.bound.insert(loc.lng,loc.lat,"point");
+        locations.forEach((loc,idx) => {
+            let flag=  this.bound.insert(loc.lng,loc.lat,idx,"point");
         });
         return this.bound
     }
@@ -37,7 +37,10 @@ class RTree{
         }else{
             let lng=bounds.boundary.left;
             let lat=bounds.boundary.top;
-            marks.push({lng:lng,lat:lat})
+            let number=bounds.number;
+            if(lng>parseFloat(location.left) && lng<parseFloat(location.right) 
+               && lat<parseFloat(location.top) && lat>parseFloat(location.bottom))
+                marks.push({lng:lng,lat:lat,number:number,type:"dog"})
         }
 
 
@@ -49,18 +52,18 @@ class Bound{
         this.boundary={left:180,right:0,top:0,bottom:90};
         this.contain_type="point";
         this.maxContain=5;
-        this.num=0
+        this.number=0;
+
     }
     setBoundary(new_boundary){
         this.boundary=Object.assign(new_boundary)
     }
-    insert(x,y,type){
-        //console.log(x+" "+y);
-        this.num++;
+    insert(x,y,number,type){
         if(this.contain_type==="point"){
             //insert in many point
             let point=new Bound();
             point.setBoundary({left:x,right:x,top:y,bottom:y} )
+            point.number=number;
             this.children.push(point);
         }else{
             
@@ -95,7 +98,7 @@ class Bound{
                 
             })
             
-            if(this.children[idx].insert(x,y,type)){
+            if(this.children[idx].insert(x,y,number,type)){
                 let newChildren=this.children[idx].getSplitChildren();
                 this.children.splice(idx,1);
                 newChildren.forEach((child)=>{

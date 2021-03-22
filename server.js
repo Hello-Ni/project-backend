@@ -1,24 +1,30 @@
 //import package
-const mongodb=require('mongodb');
+
 const express = require('express')
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const crypto=require('crypto');
 const fs=require('fs');
+const mongodb=require('mongodb');
+const mongoose=require('mongoose')
+
 //create express service
 const app = express()
 const port = 8000
 const urlencodedParser = bodyParser.urlencoded({ extended: false});
 const mapRouters = require('./routers/MapRouters');
+const adoptRouter=require('./routers/adpotRouter');
+const dbURI='mongodb+srv://nihao:zrt05c4aa09@rtree.y7lh3.mongodb.net/MyDataBase?retryWrites=true&w=majority'
+mongoose.connect(dbURI,{useNewUrlParser:true,useUnifiedTopology:true})
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }))
 // parse application/json
 app.use(bodyParser.json())
 //form 表單input必須加入name
-app.use(cors({credentials: true, origin: 'http://localhost:8080'}));
+app.use(cors({credentials: true, origin: 'http://140.116.102.134:19000'}));
 app.use(express.static('public'));
 //create mongpDB Client
-const MongoClient=mongodb.MongoClient;
+
 
 
 app.post('/login',urlencodedParser, (req, res) => {
@@ -37,7 +43,7 @@ app.post('/test',urlencodedParser,(req,res)=>{
   console.log(data)
 })
 app.use('/maps',mapRouters);
-app.use('/maps',mapRouters)
+app.use('/adopt',adoptRouter);
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
