@@ -1,986 +1,1118 @@
-{
-	"children": [
-		{
-			"children": [
-				{
-					"children": [
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.138612,
-										"right": 120.138612,
-										"top": 23.04806,
-										"bottom": 23.04806
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 30
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.153243,
-										"right": 120.153243,
-										"top": 23.04796,
-										"bottom": 23.04796
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 17
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.154084,
-										"right": 120.154084,
-										"top": 23.066907,
-										"bottom": 23.066907
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 37
-								}
-							],
-							"boundary": {
-								"left": 120.138612,
-								"right": 120.154084,
-								"top": 23.066907,
-								"bottom": 23.04796
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						},
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.218159,
-										"right": 120.218159,
-										"top": 23.024851,
-										"bottom": 23.024851
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 21
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.261252,
-										"right": 120.261252,
-										"top": 22.995993,
-										"bottom": 22.995993
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 41
-								}
-							],
-							"boundary": {
-								"left": 120.218159,
-								"right": 120.261252,
-								"top": 23.024851,
-								"bottom": 22.995993
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						},
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.184696,
-										"right": 120.184696,
-										"top": 22.980526,
-										"bottom": 22.980526
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 8
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.19646430029292,
-										"right": 120.19646430029292,
-										"top": 22.99847486710498,
-										"bottom": 22.99847486710498
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 50
-								}
-							],
-							"boundary": {
-								"left": 120.184696,
-								"right": 120.19646430029292,
-								"top": 22.99847486710498,
-								"bottom": 22.980526
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						},
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.20157314499741,
-										"right": 120.20157314499741,
-										"top": 22.997017332344736,
-										"bottom": 22.997017332344736
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 53
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.20406036249688,
-										"right": 120.20406036249688,
-										"top": 23.002094057016116,
-										"bottom": 23.002094057016116
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 51
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.20616909037686,
-										"right": 120.20616909037686,
-										"top": 22.994827313738615,
-										"bottom": 22.994827313738615
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 52
-								}
-							],
-							"boundary": {
-								"left": 120.20157314499741,
-								"right": 120.20616909037686,
-								"top": 23.002094057016116,
-								"bottom": 22.994827313738615
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						}
-					],
-					"boundary": {
-						"left": 120.138612,
-						"right": 120.261252,
-						"top": 23.066907,
-						"bottom": 22.980526
-					},
-					"contain_type": "rectangle",
-					"maxContain": 5,
-					"number": 0
-				},
-				{
-					"children": [
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.228085,
-										"right": 120.228085,
-										"top": 23.16219,
-										"bottom": 23.16219
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 36
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.245854,
-										"right": 120.245854,
-										"top": 23.101019,
-										"bottom": 23.101019
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 7
-								}
-							],
-							"boundary": {
-								"left": 120.228085,
-								"right": 120.245854,
-								"top": 23.16219,
-								"bottom": 23.101019
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						},
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.147941,
-										"right": 120.147941,
-										"top": 23.143247,
-										"bottom": 23.143247
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 27
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.176212,
-										"right": 120.176212,
-										"top": 23.170234,
-										"bottom": 23.170234
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 25
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.176894,
-										"right": 120.176894,
-										"top": 23.140134,
-										"bottom": 23.140134
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 34
-								}
-							],
-							"boundary": {
-								"left": 120.147941,
-								"right": 120.176894,
-								"top": 23.170234,
-								"bottom": 23.140134
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						},
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.271892,
-										"right": 120.271892,
-										"top": 23.180265,
-										"bottom": 23.180265
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 18
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.305886,
-										"right": 120.305886,
-										"top": 23.114011,
-										"bottom": 23.114011
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 23
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.302141,
-										"right": 120.302141,
-										"top": 23.141708,
-										"bottom": 23.141708
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 29
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.328901,
-										"right": 120.328901,
-										"top": 23.077838,
-										"bottom": 23.077838
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 40
-								}
-							],
-							"boundary": {
-								"left": 120.271892,
-								"right": 120.328901,
-								"top": 23.180265,
-								"bottom": 23.077838
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						}
-					],
-					"boundary": {
-						"left": 120.147941,
-						"right": 120.328901,
-						"top": 23.180265,
-						"bottom": 23.077838
-					},
-					"contain_type": "rectangle",
-					"maxContain": 5,
-					"number": 0
-				},
-				{
-					"children": [
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.124996,
-										"right": 120.124996,
-										"top": 23.235389,
-										"bottom": 23.235389
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 0
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.13939,
-										"right": 120.13939,
-										"top": 23.285775,
-										"bottom": 23.285775
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 5
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.154519,
-										"right": 120.154519,
-										"top": 23.286373,
-										"bottom": 23.286373
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 16
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.138711,
-										"right": 120.138711,
-										"top": 23.304879,
-										"bottom": 23.304879
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 45
-								}
-							],
-							"boundary": {
-								"left": 120.124996,
-								"right": 120.154519,
-								"top": 23.304879,
-								"bottom": 23.235389
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						},
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.230495,
-										"right": 120.230495,
-										"top": 23.250641,
-										"bottom": 23.250641
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 32
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.240417,
-										"right": 120.240417,
-										"top": 23.184162,
-										"bottom": 23.184162
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 33
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.228483,
-										"right": 120.228483,
-										"top": 23.33076,
-										"bottom": 23.33076
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 39
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.207223,
-										"right": 120.207223,
-										"top": 23.212131,
-										"bottom": 23.212131
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 46
-								}
-							],
-							"boundary": {
-								"left": 120.207223,
-								"right": 120.240417,
-								"top": 23.33076,
-								"bottom": 23.184162
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						},
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.263002,
-										"right": 120.263002,
-										"top": 23.25217,
-										"bottom": 23.25217
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 20
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.27027,
-										"right": 120.27027,
-										"top": 23.2534,
-										"bottom": 23.2534
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 22
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.281807,
-										"right": 120.281807,
-										"top": 23.235587,
-										"bottom": 23.235587
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 10
-								}
-							],
-							"boundary": {
-								"left": 120.263002,
-								"right": 120.281807,
-								"top": 23.2534,
-								"bottom": 23.235587
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						}
-					],
-					"boundary": {
-						"left": 120.124996,
-						"right": 120.281807,
-						"top": 23.33076,
-						"bottom": 23.184162
-					},
-					"contain_type": "rectangle",
-					"maxContain": 5,
-					"number": 0
-				},
-				{
-					"children": [
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.353093,
-										"right": 120.353093,
-										"top": 23.275367,
-										"bottom": 23.275367
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 19
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.349135,
-										"right": 120.349135,
-										"top": 23.306299,
-										"bottom": 23.306299
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 44
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.322328,
-										"right": 120.322328,
-										"top": 23.330908,
-										"bottom": 23.330908
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 14
-								}
-							],
-							"boundary": {
-								"left": 120.322328,
-								"right": 120.353093,
-								"top": 23.330908,
-								"bottom": 23.275367
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						},
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.379999,
-										"right": 120.379999,
-										"top": 23.186848,
-										"bottom": 23.186848
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 31
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.326378,
-										"right": 120.326378,
-										"top": 23.194741,
-										"bottom": 23.194741
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 12
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.336511,
-										"right": 120.336511,
-										"top": 23.189485,
-										"bottom": 23.189485
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 47
-								}
-							],
-							"boundary": {
-								"left": 120.326378,
-								"right": 120.379999,
-								"top": 23.194741,
-								"bottom": 23.186848
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						}
-					],
-					"boundary": {
-						"left": 120.322328,
-						"right": 120.379999,
-						"top": 23.330908,
-						"bottom": 23.186848
-					},
-					"contain_type": "rectangle",
-					"maxContain": 5,
-					"number": 0
-				}
-			],
-			"boundary": {
-				"left": 120.124996,
-				"right": 120.379999,
-				"top": 23.330908,
-				"bottom": 22.980526
-			},
-			"contain_type": "rectangle",
-			"maxContain": 5,
-			"number": 0
+[
+	{
+		"type": "root",
+		"nodes": [
+			69,
+			77
+		],
+		"boundary": {
+			"left": 120.124996,
+			"right": 120.536786,
+			"top": 23.330908,
+			"bottom": 22.941802
 		},
-		{
-			"children": [
-				{
-					"children": [
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.351045,
-										"right": 120.351045,
-										"top": 23.128564,
-										"bottom": 23.128564
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 4
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.360051,
-										"right": 120.360051,
-										"top": 23.096209,
-										"bottom": 23.096209
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 1
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.374373,
-										"right": 120.374373,
-										"top": 23.087657,
-										"bottom": 23.087657
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 24
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.389588,
-										"right": 120.389588,
-										"top": 23.131961,
-										"bottom": 23.131961
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 26
-								}
-							],
-							"boundary": {
-								"left": 120.351045,
-								"right": 120.389588,
-								"top": 23.131961,
-								"bottom": 23.087657
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						},
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.354708,
-										"right": 120.354708,
-										"top": 23.005681,
-										"bottom": 23.005681
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 9
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.379667,
-										"right": 120.379667,
-										"top": 22.941802,
-										"bottom": 22.941802
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 11
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.403212,
-										"right": 120.403212,
-										"top": 22.954441,
-										"bottom": 22.954441
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 3
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.428267,
-										"right": 120.428267,
-										"top": 23.04329,
-										"bottom": 23.04329
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 42
-								}
-							],
-							"boundary": {
-								"left": 120.354708,
-								"right": 120.428267,
-								"top": 23.04329,
-								"bottom": 22.941802
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						}
-					],
-					"boundary": {
-						"left": 120.351045,
-						"right": 120.428267,
-						"top": 23.131961,
-						"bottom": 22.941802
-					},
-					"contain_type": "rectangle",
-					"maxContain": 5,
-					"number": 0
-				},
-				{
-					"children": [
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.454573,
-										"right": 120.454573,
-										"top": 22.996246,
-										"bottom": 22.996246
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 2
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.499554,
-										"right": 120.499554,
-										"top": 22.966049,
-										"bottom": 22.966049
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 13
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.50609,
-										"right": 120.50609,
-										"top": 23.006144,
-										"bottom": 23.006144
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 38
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.536786,
-										"right": 120.536786,
-										"top": 22.999406,
-										"bottom": 22.999406
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 49
-								}
-							],
-							"boundary": {
-								"left": 120.454573,
-								"right": 120.536786,
-								"top": 23.006144,
-								"bottom": 22.966049
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						},
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.431573,
-										"right": 120.431573,
-										"top": 23.169607,
-										"bottom": 23.169607
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 43
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.457778,
-										"right": 120.457778,
-										"top": 23.126352,
-										"bottom": 23.126352
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 35
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.44519,
-										"right": 120.44519,
-										"top": 23.09942,
-										"bottom": 23.09942
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 48
-								}
-							],
-							"boundary": {
-								"left": 120.431573,
-								"right": 120.457778,
-								"top": 23.169607,
-								"bottom": 23.09942
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						},
-						{
-							"children": [
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.490522,
-										"right": 120.490522,
-										"top": 23.180447,
-										"bottom": 23.180447
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 28
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.503335,
-										"right": 120.503335,
-										"top": 23.1746,
-										"bottom": 23.1746
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 15
-								},
-								{
-									"children": [],
-									"boundary": {
-										"left": 120.507948,
-										"right": 120.507948,
-										"top": 23.168183,
-										"bottom": 23.168183
-									},
-									"contain_type": "point",
-									"maxContain": 5,
-									"number": 6
-								}
-							],
-							"boundary": {
-								"left": 120.490522,
-								"right": 120.507948,
-								"top": 23.180447,
-								"bottom": 23.168183
-							},
-							"contain_type": "point",
-							"maxContain": 5,
-							"number": 0
-						}
-					],
-					"boundary": {
-						"left": 120.431573,
-						"right": 120.536786,
-						"top": 23.180447,
-						"bottom": 22.966049
-					},
-					"contain_type": "rectangle",
-					"maxContain": 5,
-					"number": 0
-				}
-			],
-			"boundary": {
-				"left": 120.351045,
-				"right": 120.536786,
-				"top": 23.180447,
-				"bottom": 22.941802
-			},
-			"contain_type": "rectangle",
-			"maxContain": 5,
-			"number": 0
-		}
-	],
-	"boundary": {
-		"left": 120.124996,
-		"right": 120.536786,
-		"top": 23.330908,
-		"bottom": 22.941802
+		"contain_type": "rectangle",
+		"maxContain": 5,
+		"number": 78
 	},
-	"contain_type": "rectangle",
-	"maxContain": 5,
-	"number": 0
-}
+	{
+		"type": "node",
+		"nodes": [
+			72,
+			76
+		],
+		"boundary": {
+			"left": 120.351045,
+			"right": 120.536786,
+			"top": 23.180447,
+			"bottom": 22.941802
+		},
+		"contain_type": "rectangle",
+		"maxContain": 5,
+		"number": 77
+	},
+	{
+		"type": "node",
+		"nodes": [
+			73,
+			74,
+			75
+		],
+		"boundary": {
+			"left": 120.431573,
+			"right": 120.536786,
+			"top": 23.180447,
+			"bottom": 22.966049
+		},
+		"contain_type": "rectangle",
+		"maxContain": 5,
+		"number": 76
+	},
+	{
+		"type": "node",
+		"nodes": [
+			28,
+			15,
+			6
+		],
+		"boundary": {
+			"left": 120.490522,
+			"right": 120.507948,
+			"top": 23.180447,
+			"bottom": 23.168183
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 75
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.507948,
+			"right": 120.507948,
+			"top": 23.168183,
+			"bottom": 23.168183
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 6
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.503335,
+			"right": 120.503335,
+			"top": 23.1746,
+			"bottom": 23.1746
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 15
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.490522,
+			"right": 120.490522,
+			"top": 23.180447,
+			"bottom": 23.180447
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 28
+	},
+	{
+		"type": "node",
+		"nodes": [
+			43,
+			35,
+			48
+		],
+		"boundary": {
+			"left": 120.431573,
+			"right": 120.457778,
+			"top": 23.169607,
+			"bottom": 23.09942
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 74
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.44519,
+			"right": 120.44519,
+			"top": 23.09942,
+			"bottom": 23.09942
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 48
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.457778,
+			"right": 120.457778,
+			"top": 23.126352,
+			"bottom": 23.126352
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 35
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.431573,
+			"right": 120.431573,
+			"top": 23.169607,
+			"bottom": 23.169607
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 43
+	},
+	{
+		"type": "node",
+		"nodes": [
+			2,
+			13,
+			38,
+			49
+		],
+		"boundary": {
+			"left": 120.454573,
+			"right": 120.536786,
+			"top": 23.006144,
+			"bottom": 22.966049
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 73
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.536786,
+			"right": 120.536786,
+			"top": 22.999406,
+			"bottom": 22.999406
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 49
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.50609,
+			"right": 120.50609,
+			"top": 23.006144,
+			"bottom": 23.006144
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 38
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.499554,
+			"right": 120.499554,
+			"top": 22.966049,
+			"bottom": 22.966049
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 13
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.454573,
+			"right": 120.454573,
+			"top": 22.996246,
+			"bottom": 22.996246
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 2
+	},
+	{
+		"type": "node",
+		"nodes": [
+			70,
+			71
+		],
+		"boundary": {
+			"left": 120.351045,
+			"right": 120.428267,
+			"top": 23.131961,
+			"bottom": 22.941802
+		},
+		"contain_type": "rectangle",
+		"maxContain": 5,
+		"number": 72
+	},
+	{
+		"type": "node",
+		"nodes": [
+			9,
+			11,
+			3,
+			42
+		],
+		"boundary": {
+			"left": 120.354708,
+			"right": 120.428267,
+			"top": 23.04329,
+			"bottom": 22.941802
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 71
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.428267,
+			"right": 120.428267,
+			"top": 23.04329,
+			"bottom": 23.04329
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 42
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.403212,
+			"right": 120.403212,
+			"top": 22.954441,
+			"bottom": 22.954441
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 3
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.379667,
+			"right": 120.379667,
+			"top": 22.941802,
+			"bottom": 22.941802
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 11
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.354708,
+			"right": 120.354708,
+			"top": 23.005681,
+			"bottom": 23.005681
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 9
+	},
+	{
+		"type": "node",
+		"nodes": [
+			4,
+			1,
+			24,
+			26
+		],
+		"boundary": {
+			"left": 120.351045,
+			"right": 120.389588,
+			"top": 23.131961,
+			"bottom": 23.087657
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 70
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.389588,
+			"right": 120.389588,
+			"top": 23.131961,
+			"bottom": 23.131961
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 26
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.374373,
+			"right": 120.374373,
+			"top": 23.087657,
+			"bottom": 23.087657
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 24
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.360051,
+			"right": 120.360051,
+			"top": 23.096209,
+			"bottom": 23.096209
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 1
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.351045,
+			"right": 120.351045,
+			"top": 23.128564,
+			"bottom": 23.128564
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 4
+	},
+	{
+		"type": "node",
+		"nodes": [
+			57,
+			61,
+			65,
+			68
+		],
+		"boundary": {
+			"left": 120.124996,
+			"right": 120.379999,
+			"top": 23.330908,
+			"bottom": 22.980526
+		},
+		"contain_type": "rectangle",
+		"maxContain": 5,
+		"number": 69
+	},
+	{
+		"type": "node",
+		"nodes": [
+			66,
+			67
+		],
+		"boundary": {
+			"left": 120.322328,
+			"right": 120.379999,
+			"top": 23.330908,
+			"bottom": 23.186848
+		},
+		"contain_type": "rectangle",
+		"maxContain": 5,
+		"number": 68
+	},
+	{
+		"type": "node",
+		"nodes": [
+			31,
+			12,
+			47
+		],
+		"boundary": {
+			"left": 120.326378,
+			"right": 120.379999,
+			"top": 23.194741,
+			"bottom": 23.186848
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 67
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.336511,
+			"right": 120.336511,
+			"top": 23.189485,
+			"bottom": 23.189485
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 47
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.326378,
+			"right": 120.326378,
+			"top": 23.194741,
+			"bottom": 23.194741
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 12
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.379999,
+			"right": 120.379999,
+			"top": 23.186848,
+			"bottom": 23.186848
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 31
+	},
+	{
+		"type": "node",
+		"nodes": [
+			19,
+			44,
+			14
+		],
+		"boundary": {
+			"left": 120.322328,
+			"right": 120.353093,
+			"top": 23.330908,
+			"bottom": 23.275367
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 66
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.322328,
+			"right": 120.322328,
+			"top": 23.330908,
+			"bottom": 23.330908
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 14
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.349135,
+			"right": 120.349135,
+			"top": 23.306299,
+			"bottom": 23.306299
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 44
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.353093,
+			"right": 120.353093,
+			"top": 23.275367,
+			"bottom": 23.275367
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 19
+	},
+	{
+		"type": "node",
+		"nodes": [
+			62,
+			63,
+			64
+		],
+		"boundary": {
+			"left": 120.124996,
+			"right": 120.281807,
+			"top": 23.33076,
+			"bottom": 23.184162
+		},
+		"contain_type": "rectangle",
+		"maxContain": 5,
+		"number": 65
+	},
+	{
+		"type": "node",
+		"nodes": [
+			20,
+			22,
+			10
+		],
+		"boundary": {
+			"left": 120.263002,
+			"right": 120.281807,
+			"top": 23.2534,
+			"bottom": 23.235587
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 64
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.281807,
+			"right": 120.281807,
+			"top": 23.235587,
+			"bottom": 23.235587
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 10
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.27027,
+			"right": 120.27027,
+			"top": 23.2534,
+			"bottom": 23.2534
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 22
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.263002,
+			"right": 120.263002,
+			"top": 23.25217,
+			"bottom": 23.25217
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 20
+	},
+	{
+		"type": "node",
+		"nodes": [
+			32,
+			33,
+			39,
+			46
+		],
+		"boundary": {
+			"left": 120.207223,
+			"right": 120.240417,
+			"top": 23.33076,
+			"bottom": 23.184162
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 63
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.207223,
+			"right": 120.207223,
+			"top": 23.212131,
+			"bottom": 23.212131
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 46
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.228483,
+			"right": 120.228483,
+			"top": 23.33076,
+			"bottom": 23.33076
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 39
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.240417,
+			"right": 120.240417,
+			"top": 23.184162,
+			"bottom": 23.184162
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 33
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.230495,
+			"right": 120.230495,
+			"top": 23.250641,
+			"bottom": 23.250641
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 32
+	},
+	{
+		"type": "node",
+		"nodes": [
+			0,
+			5,
+			16,
+			45
+		],
+		"boundary": {
+			"left": 120.124996,
+			"right": 120.154519,
+			"top": 23.304879,
+			"bottom": 23.235389
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 62
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.138711,
+			"right": 120.138711,
+			"top": 23.304879,
+			"bottom": 23.304879
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 45
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.154519,
+			"right": 120.154519,
+			"top": 23.286373,
+			"bottom": 23.286373
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 16
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.13939,
+			"right": 120.13939,
+			"top": 23.285775,
+			"bottom": 23.285775
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 5
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.124996,
+			"right": 120.124996,
+			"top": 23.235389,
+			"bottom": 23.235389
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 0
+	},
+	{
+		"type": "node",
+		"nodes": [
+			58,
+			59,
+			60
+		],
+		"boundary": {
+			"left": 120.147941,
+			"right": 120.328901,
+			"top": 23.180265,
+			"bottom": 23.077838
+		},
+		"contain_type": "rectangle",
+		"maxContain": 5,
+		"number": 61
+	},
+	{
+		"type": "node",
+		"nodes": [
+			18,
+			23,
+			29,
+			40
+		],
+		"boundary": {
+			"left": 120.271892,
+			"right": 120.328901,
+			"top": 23.180265,
+			"bottom": 23.077838
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 60
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.328901,
+			"right": 120.328901,
+			"top": 23.077838,
+			"bottom": 23.077838
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 40
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.302141,
+			"right": 120.302141,
+			"top": 23.141708,
+			"bottom": 23.141708
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 29
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.305886,
+			"right": 120.305886,
+			"top": 23.114011,
+			"bottom": 23.114011
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 23
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.271892,
+			"right": 120.271892,
+			"top": 23.180265,
+			"bottom": 23.180265
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 18
+	},
+	{
+		"type": "node",
+		"nodes": [
+			27,
+			25,
+			34
+		],
+		"boundary": {
+			"left": 120.147941,
+			"right": 120.176894,
+			"top": 23.170234,
+			"bottom": 23.140134
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 59
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.176894,
+			"right": 120.176894,
+			"top": 23.140134,
+			"bottom": 23.140134
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 34
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.176212,
+			"right": 120.176212,
+			"top": 23.170234,
+			"bottom": 23.170234
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 25
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.147941,
+			"right": 120.147941,
+			"top": 23.143247,
+			"bottom": 23.143247
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 27
+	},
+	{
+		"type": "node",
+		"nodes": [
+			36,
+			7
+		],
+		"boundary": {
+			"left": 120.228085,
+			"right": 120.245854,
+			"top": 23.16219,
+			"bottom": 23.101019
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 58
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.245854,
+			"right": 120.245854,
+			"top": 23.101019,
+			"bottom": 23.101019
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 7
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.228085,
+			"right": 120.228085,
+			"top": 23.16219,
+			"bottom": 23.16219
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 36
+	},
+	{
+		"type": "node",
+		"nodes": [
+			54,
+			55,
+			56
+		],
+		"boundary": {
+			"left": 120.138612,
+			"right": 120.261252,
+			"top": 23.066907,
+			"bottom": 22.980526
+		},
+		"contain_type": "rectangle",
+		"maxContain": 5,
+		"number": 57
+	},
+	{
+		"type": "node",
+		"nodes": [
+			21,
+			41
+		],
+		"boundary": {
+			"left": 120.218159,
+			"right": 120.261252,
+			"top": 23.024851,
+			"bottom": 22.995993
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 56
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.261252,
+			"right": 120.261252,
+			"top": 22.995993,
+			"bottom": 22.995993
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 41
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.218159,
+			"right": 120.218159,
+			"top": 23.024851,
+			"bottom": 23.024851
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 21
+	},
+	{
+		"type": "node",
+		"nodes": [
+			8,
+			50,
+			51,
+			52
+		],
+		"boundary": {
+			"left": 120.184696,
+			"right": 120.20717092111673,
+			"top": 23.000001970257337,
+			"bottom": 22.980526
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 55
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.20717092111673,
+			"right": 120.20717092111673,
+			"top": 23.000001970257337,
+			"bottom": 23.000001970257337
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 52
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.20345754528671,
+			"right": 120.20345754528671,
+			"top": 22.994793840679637,
+			"bottom": 22.994793840679637
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 51
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.19910163770508,
+			"right": 120.19910163770508,
+			"top": 22.997835714925152,
+			"bottom": 22.997835714925152
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 50
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.184696,
+			"right": 120.184696,
+			"top": 22.980526,
+			"bottom": 22.980526
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 8
+	},
+	{
+		"type": "node",
+		"nodes": [
+			30,
+			17,
+			37
+		],
+		"boundary": {
+			"left": 120.138612,
+			"right": 120.154084,
+			"top": 23.066907,
+			"bottom": 23.04796
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 54
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.154084,
+			"right": 120.154084,
+			"top": 23.066907,
+			"bottom": 23.066907
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 37
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.153243,
+			"right": 120.153243,
+			"top": 23.04796,
+			"bottom": 23.04796
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 17
+	},
+	{
+		"type": "node",
+		"nodes": [],
+		"boundary": {
+			"left": 120.138612,
+			"right": 120.138612,
+			"top": 23.04806,
+			"bottom": 23.04806
+		},
+		"contain_type": "point",
+		"maxContain": 5,
+		"number": 30
+	}
+]

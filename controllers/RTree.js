@@ -1,10 +1,16 @@
 'use strict';
+const MapData=require('../models/Map')
 class RTree{
     constructor(){
         this.bound=new Bound();
-        this.num=0;
+        this.nodeNum=0;
+        this.node=[]
+    }
+    get allNode(){
+        return this.node
     }
     created(locations){
+        this.nodeNum=locations.length
         locations.forEach((loc,idx) => {
             let flag=  this.bound.insert(loc.lng,loc.lat,idx,"point");
         });
@@ -13,14 +19,25 @@ class RTree{
     visit(bounds){
         if(bounds.contain_type=="rectangle"){
             bounds.children.forEach((child)=>{
-                this.visit(child);
+                let number=this.visit(child)
+                bounds.nodes.push(number);
+                this.node.push(child)
             })
+            this.nodeNum++
+            bounds.number=this.nodeNum
+            delete bounds.children//just record the number marker
+            return bounds.number
         }
         else{
            bounds.children.forEach((child)=>{
-               this.num++;
+               bounds.nodes.push(child.number)
+               delete child.children
+               this.node.push(child)
            })
-            console.log(this.num)
+           this.nodeNum++
+           bounds.number=this.nodeNum
+           delete bounds.children//just record the number marker
+           return bounds.number
         }
     }
     searchTree(bounds,location,marks){
@@ -45,10 +62,82 @@ class RTree{
 
 
     }
+    insertDataBaseTree(bounds,num,location){
+        let parent=bounds.find(bound=>bound.number==num)
+        let x=parseFloat(location.longitude)
+        let y=parseFloat(location.latitude)
+        while(parent.contain_type==="rectangle"){
+            let queues=[...parent.nodes]
+            let min_d_height=1000;
+            let min_d_width=1000;
+            queues.forEach((q)=>{
+                let node=bounds.find(bound=>bound.number==q);
+                let d_w = 0;
+                let d_h = 0;
+                if (x < node.boundary.left) {
+                    d_w += (node.boundary.left - x);
+                   
+                }
+                
+                if (x >node.boundary.right) {
+                    d_w += (x - node.boundary.right);
+                }
+                
+                if (y > node.boundary.top) {
+                    d_h += (y-node.boundary.top);
+                }
+                
+                if (y < node.boundary.bottom ) {
+                    d_h += (node.boundary.bottom-y);
+                }
+                if (d_w + d_h < min_d_width + min_d_height) {
+                    min_d_width = d_w;  
+                    min_d_height = d_h;
+                    
+                    parent={...node}
+                }
+            })
+        }
+        console.log(parent.nodes)
+    }
+    searchDataBaseTree(idx,location,marks){
+        let root=bounds.find(bound=>bound.number===idx)
+        if(parseFloat(location.left)>root.boundary.right || parseFloat(location.right)<root.boundary.left)
+            return;
+        if(parseFloat(location.top)<root.boundary.bottom || parseFloat(location.bottom)>root.boundary.top)
+            return;
+        let queue=[...root.nodes]
+        console.log(root)
+        while(queue.length>0){
+            
+            let n=queue.pop()
+            let target=bounds.find(bound=>bound.number==n)
+            if(target.nodes.length>0){
+                if(parseFloat(location.left)>target.boundary.right || parseFloat(location.right)<target.boundary.left)
+                    continue;
+                if(parseFloat(location.top)<target.boundary.bottom || parseFloat(location.bottom)>target.boundary.top)
+                    continue;
+                queue=queue.concat(target.nodes)
+            }else{
+                console.log(target)
+                //the leaf of R tree
+                let lng=target.boundary.left;
+                let lat=target.boundary.top;
+                let number=target.number;
+                if(lng>parseFloat(location.left) && lng<parseFloat(location.right) 
+                && lat<parseFloat(location.top) && lat>parseFloat(location.bottom))
+                    marks.push({lng:lng,lat:lat,number:number,type:"dog"})
+                //console.log(marks)
+            }
+        }
+
+    }
 }
 class Bound{
     constructor(){
+        this.type="node";
         this.children=[];
+        this.nodes=[];
         this.boundary={left:180,right:0,top:0,bottom:90};
         this.contain_type="point";
         this.maxContain=5;
