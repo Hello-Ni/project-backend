@@ -11,7 +11,7 @@ public class RandomLoc {
     }
 
     public static void randomLonLat(double MinLon, double MaxLon, double MinLat, double MaxLat) {
-        File file = new File("./public/location.json");
+        File file = new File("./public/location3.json");
         try {
             if (!file.exists())
                 file.createNewFile();
@@ -23,7 +23,7 @@ public class RandomLoc {
             BufferedWriter bw = new BufferedWriter(fw);
             bw.write("[\n");
             Random random = new Random();
-            for (int i = 0; i < 50; ++i) {
+            for (int i = 0; i < 10000; ++i) {
                 BigDecimal db = new BigDecimal(Math.random() * (MaxLon - MinLon) + MinLon);
                 String lon = db.setScale(6, BigDecimal.ROUND_HALF_UP).toString();
                 db = new BigDecimal(Math.random() * (MaxLat - MinLat) + MinLat);

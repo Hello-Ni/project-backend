@@ -8,11 +8,11 @@ const mapSearch = (req,res)=>{
     try {
         let allBound=fs.readFileSync(path.join(__dirname,'../public/RTree.json'),'utf-8')
         allBound=JSON.parse(allBound)
-        //RTree.dataBase.searchTree(allBound,location,nearMark)
         let location=req.body
         let nearMark=[];
-        RTree.dataBase.searchDataBaseTree(allBound,location,nearMark)
-        console.log(nearMark)
+        RTree.instruction.search(allBound,location,nearMark)
+        // let root=allBound.find(bound=>bound.type==="root")
+        // RTree.instruction.searchDataBaseTree(allBound,root,location,nearMark)
         res.send({data:nearMark})
     } catch (error) {
         console.log(error)
@@ -21,15 +21,15 @@ const mapSearch = (req,res)=>{
 }
 const mapInsert = (req,res)=>{  
     try {
-        let total=0
-        MapData.countDocuments({},function(err,count){
-            total=count
-        })
         let allBound=fs.readFileSync(path.join(__dirname,'../public/RTree.json'),'utf-8')
         allBound=JSON.parse(allBound)
         let location=req.body
-        RTree.dataBase.insertDataBaseTree(allBound,total,location);
-
+        let newBounds=RTree.instruction.insert(allBound,location)
+        let writeData=JSON.stringify(newBounds,null,"\t")
+        fs.writeFileSync(path.join(__dirname,'../public/RTree.json'),writeData,'utf-8')
+        // let root=allBound.find(bound=>bound.type==="root")
+        // RTree.instruction.insertDataBaseTree(allBound,allBound.length,root,location);
+        res.send({status:'OK'})
         
     } catch (error) {
         
@@ -38,16 +38,20 @@ const mapInsert = (req,res)=>{
 const mapCreate=(req,res)=>{
 
     try {
-        console.log("enter!")
         const data=fs.readFileSync(path.join(__dirname,'../public/location.json'),'utf-8');
         let locations=JSON.parse(data);
-        let roots=RTree.dataBase.created(locations);
-        let total=RTree.dataBase.visit(roots)
-        
-        let allNode=RTree.dataBase.allNode
-        roots.type="root"
-        allNode.push(roots)//add parent to node
-        allNode.reverse()
+        let roots=RTree.instruction.created(locations);
+
+
+
+        /** for not recursive solve */
+        //let total=RTree.instruction.visit(roots)
+        // let allNode=RTree.instruction.allNode
+        // roots.type="root"
+        // allNode.push(roots)//add parent to node
+        // allNode.reverse()
+
+
         // MapData.insertMany(allNode)
         // .then(function(){ 
         //     console.log("Data inserted")  // Success 
@@ -55,7 +59,7 @@ const mapCreate=(req,res)=>{
         //     console.log(error)      // Failure 
         // });
 
-        let writeData=JSON.stringify(allNode,null,"\t")
+        let writeData=JSON.stringify(roots,null,"\t")
         fs.writeFileSync(path.join(__dirname,'../public/RTree.json'),writeData,'utf-8')
         
         res.send({status:1})
