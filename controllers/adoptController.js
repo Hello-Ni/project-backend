@@ -38,5 +38,6 @@ const findAnimal = (req, res) => {
 };
 module.exports = {
   createAnimal,
+  recommend,
   findAnimal,
 };
