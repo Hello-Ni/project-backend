@@ -10,23 +10,10 @@ const mapSearch = (req, res) => {
       path.join(__dirname, "../public/RTree.json"),
       "utf-8"
     );
-    let animalData = fs.readFileSync(
-      path.join(__dirname, "../public/Animal.json"),
-      "utf-8"
-    );
     allBound = JSON.parse(allBound);
-    animalData = JSON.parse(animalData);
     let location = req.body;
     let nearMarks = [];
     RTree.instruction.search(allBound, location, nearMarks);
-    // let root=allBound.find(bound=>bound.type==="root")
-    // RTree.instruction.searchDataBaseTree(allBound,root,location,nearMark)
-    nearMarks.forEach((mark, idx) => {
-      let result = animalData.find((data) => data.number === mark.number);
-      delete result.number;
-      nearMarks[idx] = { ...mark, ...result };
-    });
-    //console.log(nearMarks)
     res.send({ data: nearMarks });
   } catch (error) {
     console.log(error);
@@ -78,54 +65,43 @@ const mapCreate = (req, res) => {
   try {
     console.log("reset");
     const data = fs.readFileSync(
-      path.join(__dirname, "../public/location.json"),
-      "utf-8"
-    );
-    let animal_data = fs.readFileSync(
-      path.join(__dirname, "../public/Animal.json"),
+      path.join(__dirname, "../public/location3.json"),
       "utf-8"
     );
 
     let locations = JSON.parse(data);
-    let animal = JSON.parse(animal_data);
     let roots = RTree.instruction.created(locations);
     roots["nodesNum"] = locations.length;
-
-    animal = animal.slice(0, 3);
-    /** for not recursive solve */
-    //let total=RTree.instruction.visit(roots)
-    // let allNode=RTree.instruction.allNode
-    // roots.type="root"
-    // allNode.push(roots)//add parent to node
-    // allNode.reverse()
-
-    // MapData.insertMany(allNode)
-    // .then(function(){
-    //     console.log("Data inserted")  // Success
-    // }).catch(function(error){
-    //     console.log(error)      // Failure
-    // });
-
     let writeData = JSON.stringify(roots, null, "\t");
-    let writeAnimal = JSON.stringify(animal, null, "\t");
     fs.writeFileSync(
       path.join(__dirname, "../public/RTree.json"),
       writeData,
       "utf-8"
     );
-    fs.writeFileSync(
-      path.join(__dirname, "../public/Animal.json"),
-      writeAnimal,
-      "utf-8"
-    );
+    console.log("creaete finish");
     res.send({ status: 1 });
   } catch (error) {
     res.send({ status: 0 });
   }
 };
+const showRTree = (req, res) => {
+  console.log("show RTree");
+  let allBoundFileData = fs.readFileSync(
+    path.join(__dirname, "../public/RTree.json"),
+    "utf-8"
+  );
+  let rectangles = [];
+
+  let allBound = JSON.parse(allBoundFileData);
+  rectangles.push(allBound.boundary);
+  RTree.instruction.searchRecs(allBound, rectangles);
+  console.log(rectangles);
+  res.send({ data: rectangles });
+};
 const mapGetAllMarker = (req, res) => {
+  console.log("create");
   const data = fs.readFileSync(
-    path.join(__dirname, "../public/location.json"),
+    path.join(__dirname, "../public/location3.json"),
     "utf-8"
   );
   let locations = JSON.parse(data);
@@ -136,4 +112,5 @@ module.exports = {
   mapCreate,
   mapInsert,
   mapGetAllMarker,
+  showRTree,
 };

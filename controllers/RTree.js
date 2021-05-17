@@ -72,6 +72,12 @@ class Instruction {
       return bounds.number;
     }
   }
+  searchRecs(bounds, rectangles) {
+    bounds.children.forEach((bound) => {
+      if (bound.contain_type == "rectangle") rectangles.push(bound.boundary);
+      this.searchRecs(bound, rectangles);
+    });
+  }
   insertDataBaseTree(bounds, maxIdx, parent, location) {
     let x = parseFloat(location.longitude);
     let y = parseFloat(location.latitude);
