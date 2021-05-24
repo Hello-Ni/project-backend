@@ -14,8 +14,10 @@ const port = 8000;
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 const mapRouters = require("./routers/MapRouters");
 const adoptRouter = require("./routers/adoptRouter");
+const accountRouter = require("./routers/accountRouter");
 const dbURI =
   "mongodb+srv://nihao:zrt05c4aa09@rtree.y7lh3.mongodb.net/MyDataBase?retryWrites=true&w=majority";
+const userTable = require("../backend/models/User");
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -29,13 +31,28 @@ app.use(express.static("public"));
 app.post("/login", urlencodedParser, (req, res) => {
   console.log(req.body);
   if (req.body.email == "" || req.body.password == "") res.send("empty!");
-  else if (req.body.email === "ainimal@123" && req.body.password === "123123") {
+  else if (req.body.email === "ni@1" && req.body.password === "111111") {
     console.log("success");
     res.send("successful");
   } else res.send("fail");
 });
+app.get("/user", urlencodedParser, (req, res) => {
+  const user = new userTable();
+  user.email = "ni@1";
+  user.password = "123";
+  user.history = {};
+  user
+    .save()
+    .then(() => {
+      console.log("successful");
+    })
+    .catch(() => {
+      console.log("error");
+    });
+});
 app.use("/maps", mapRouters);
 app.use("/adopt", adoptRouter);
+app.use("/account", accountRouter);
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });

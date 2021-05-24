@@ -65,7 +65,7 @@ const mapCreate = (req, res) => {
   try {
     console.log("reset");
     const data = fs.readFileSync(
-      path.join(__dirname, "../public/location3.json"),
+      path.join(__dirname, "../public/location.json"),
       "utf-8"
     );
 

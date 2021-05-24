@@ -11,8 +11,8 @@ public class RandomLoc {
     }
 
     public static void randomLonLat(double MinLon, double MaxLon, double MinLat, double MaxLat) {
-        File file = new File("./public/location3.json");
-        int num = 100000;
+        File file = new File("./public/location2.json");
+        int num = 332;
         try {
             if (!file.exists())
                 file.createNewFile();
