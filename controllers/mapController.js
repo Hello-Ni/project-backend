@@ -13,8 +13,10 @@ const mapSearch = (req, res) => {
     allBound = JSON.parse(allBound);
     let location = req.body;
     let nearMarks = [];
-    RTree.instruction.search(allBound, location, nearMarks);
-    res.send({ data: nearMarks });
+    let details = [];
+    RTree.instruction.search(allBound, location, nearMarks, details);
+    console.log(details);
+    res.send({ places: nearMarks, details: details });
   } catch (error) {
     console.log(error);
   }
@@ -64,14 +66,21 @@ const mapInsert = (req, res) => {
 const mapCreate = (req, res) => {
   try {
     console.log("reset");
-    const data = fs.readFileSync(
-      path.join(__dirname, "../public/location.json"),
-      "utf-8"
+    const dogs = JSON.parse(
+      fs.readFileSync(
+        path.join(__dirname, "../public/Animal/dog/dog.json"),
+        "utf-8"
+      )
     );
-
-    let locations = JSON.parse(data);
-    let roots = RTree.instruction.created(locations);
-    roots["nodesNum"] = locations.length;
+    const cats = JSON.parse(
+      fs.readFileSync(
+        path.join(__dirname, "../public/Animal/cat/cat.json"),
+        "utf-8"
+      )
+    );
+    let data = [...dogs, ...cats];
+    let roots = RTree.instruction.created(data);
+    roots["nodesNum"] = data.length;
     let writeData = JSON.stringify(roots, null, "\t");
     fs.writeFileSync(
       path.join(__dirname, "../public/RTree.json"),

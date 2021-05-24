@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const base = "https://3ca7697d2e33.ngrok.io";
 let allCat = fs.readFileSync(
   path.join(__dirname, "public/Animal/cat/cat.json")
 );
@@ -70,11 +71,13 @@ fs.writeFileSync(
 
 let count = 0;
 
-allDog.forEach((dog) => {
+allDog.forEach((dog, idx) => {
   dog["place"] = locations[count++];
+  dog["image"] = `${base}/Animal/dog/${idx}.jpg`;
 });
-allCat.forEach((cat) => {
+allCat.forEach((cat, idx) => {
   cat["place"] = locations[count++];
+  cat["image"] = `${base}/Animal/cat/${idx}.jpg`;
 });
 allDog = JSON.stringify(allDog, null, "\t");
 allCat = JSON.stringify(allCat, null, "\t");

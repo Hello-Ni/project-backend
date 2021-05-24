@@ -4,7 +4,6 @@ const path = require("path");
 const AnimalData = require("../models/Animal");
 const userData = require("../models/User");
 const { use } = require("../routers/MapRouters");
-const baseUrl = "https://34e72fc2cac1.ngrok.io";
 const createAnimal = (req, res) => {
   try {
     const animal_data = new AnimalData(req.body);
@@ -45,12 +44,6 @@ const recommend = (req, res) => {
       "utf-8"
     )
   );
-  allDog.forEach((dog, idx) => {
-    dog["image"] = `${baseUrl}/Animal/dog/${idx}.jpg`;
-  });
-  allCat.forEach((cat, idx) => {
-    cat["image"] = `${baseUrl}/Animal/cat/${idx}.jpg`;
-  });
   let animals = [...allDog, ...allCat];
   let result = [];
   for (let i = 0; i < 5; ++i) {
@@ -102,9 +95,6 @@ const findAnimal = (req, res) => {
     );
     animal = JSON.parse(animal);
     let result = [...animal];
-    result.forEach((r, idx) => {
-      r["image"] = `${baseUrl}/Animal/${type}/${idx}.jpg`;
-    });
     if (req.body.breed !== "不拘") {
       let date = new Date().toLocaleDateString("zh-TW");
       history.push({ breed: req.body.breed, date: date });

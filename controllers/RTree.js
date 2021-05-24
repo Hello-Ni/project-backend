@@ -1,18 +1,26 @@
 "use strict";
 const MapData = require("../models/Map");
 class Instruction {
-  created(locations) {
+  created(data) {
     let rootBound = new Bound();
     let Rtree = new RTree();
 
-    locations.forEach((loc, idx) => {
-      let flag = Rtree.insertTree(rootBound, loc.lng, loc.lat, idx, "point");
+    data.forEach((d, idx) => {
+      console.log(idx);
+      let flag = Rtree.insertTree(
+        rootBound,
+        d.place.lng,
+        d.place.lat,
+        idx,
+        "point",
+        d
+      );
     });
     //console.log(rootBound)
     return rootBound;
   }
 
-  search(bounds, location, marks) {
+  search(bounds, location, marks, details) {
     //the rectangle is intersected or not
     if (
       parseFloat(location.left) > bounds.boundary.right ||
@@ -26,27 +34,30 @@ class Instruction {
       return;
     if (bounds.children.length > 0) {
       bounds.children.forEach((child) => {
-        this.search(child, location, marks);
+        this.search(child, location, marks, details);
       });
     } else {
       let lng = bounds.boundary.left;
       let lat = bounds.boundary.top;
       let number = bounds.number;
+      let detail = bounds.detail;
       if (
         lng > parseFloat(location.left) &&
         lng < parseFloat(location.right) &&
         lat < parseFloat(location.top) &&
         lat > parseFloat(location.bottom)
-      )
-        marks.push({ lng: lng, lat: lat, number: number });
+      ) {
+        marks.push({ lng: lng, lat: lat });
+        details.push(detail);
+      }
     }
   }
-  insert(bounds, location, index) {
+  insert(bounds, location, detail, index) {
     console.log(index);
     let Rtree = new RTree();
     let x = parseFloat(location.longitude);
     let y = parseFloat(location.latitude);
-    Rtree.insertTree(bounds, x, y, index, "point");
+    Rtree.insertTree(bounds, x, y, index, "point", detail);
     return bounds;
   }
   visit(bounds) {
@@ -166,7 +177,7 @@ class Instruction {
   }
 }
 class RTree {
-  insertTree(bounds, x, y, number, type) {
+  insertTree(bounds, x, y, number, type, detail) {
     if (bounds.contain_type === "point") {
       //insert in many point
 
@@ -174,6 +185,7 @@ class RTree {
       point.boundary = { left: x, right: x, top: y, bottom: y };
       //console.log(point.boundary)
       point.number = number;
+      point.detail = detail;
       bounds.children.push(point);
     } else {
       //insert in many rectangle
@@ -203,7 +215,7 @@ class RTree {
           idx = i;
         }
       });
-      if (this.insertTree(bounds.children[idx], x, y, number, type)) {
+      if (this.insertTree(bounds.children[idx], x, y, number, type, detail)) {
         let newChildren = this.getSplitChildren(bounds.children[idx]);
         bounds.children.splice(idx, 1);
         newChildren.forEach((child) => {
