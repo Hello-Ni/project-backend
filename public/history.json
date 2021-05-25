@@ -1,310 +1,86 @@
 [
 	{
+		"name": "咪嚕",
+		"breed": "博美",
+		"type": "狗",
+		"gender": "公",
+		"shape": "小型",
+		"color": "棕色",
+		"age": "老年",
+		"fixed": "已結紮",
+		"location": "新北市 新莊區",
+		"contact": "琳琳",
+		"phone": "0903091368",
+		"place": "[object Object]",
+		"image": "https://a8c1cd483071.ngrok.io/Animal/dog/9.jpg",
+		"date": "2021/5/24"
+	},
+	{
 		"breed": "臘腸狗",
 		"date": "2021/5/24"
 	},
 	{
+		"name": "多比",
+		"breed": "臘腸狗",
+		"type": "狗",
+		"gender": "公",
+		"shape": "小型",
+		"color": "棕色",
+		"age": "老年",
+		"fixed": "已結紮",
+		"location": "台北市 大安區",
+		"contact": "黃筱芸",
+		"phone": "0937629290",
+		"place": "[object Object]",
+		"image": "https://a8c1cd483071.ngrok.io/Animal/dog/0.jpg",
+		"date": "2021/5/24"
+	},
+	{
+		"name": "多多",
+		"breed": "臘腸狗",
+		"type": "狗",
+		"gender": "公",
+		"shape": "小型",
+		"color": "黑色",
+		"age": "成年",
+		"fixed": "未結紮",
+		"location": "桃園市 中壢區",
+		"contact": "豬小文",
+		"phone": "0901285073",
+		"place": "[object Object]",
+		"image": "https://a8c1cd483071.ngrok.io/Animal/dog/13.jpg",
+		"date": "2021/5/24"
+	},
+	{
+		"name": "Maru",
+		"breed": "臘腸狗",
+		"type": "狗",
+		"gender": "母",
+		"shape": "小型",
+		"color": "黑色",
+		"age": "老年",
+		"fixed": "已結紮",
+		"location": "苗栗縣 頭份市",
+		"contact": "林姵希",
+		"phone": "0983115088",
+		"place": "[object Object]",
+		"image": "https://a8c1cd483071.ngrok.io/Animal/dog/29.jpg",
+		"date": "2021/5/24"
+	},
+	{
+		"name": "Lala",
 		"breed": "臘腸狗",
 		"type": "狗",
 		"gender": "母",
 		"shape": "小型",
 		"color": "茶色",
 		"age": "成年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"type": "狗",
-		"gender": "母",
-		"shape": "小型",
-		"color": "棕色",
-		"age": "老年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"type": "狗",
-		"gender": "公",
-		"shape": "小型",
-		"color": "黃色",
-		"age": "老年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"type": "狗",
-		"gender": "母",
-		"shape": "中型",
-		"color": "黃色",
-		"age": "幼年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"type": "狗",
-		"gender": "公",
-		"shape": "中型",
-		"color": "黃色",
-		"age": "成年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "柯基",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"type": "狗",
-		"gender": "公",
-		"shape": "小型",
-		"color": "棕色",
-		"age": "老年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"type": "狗",
-		"gender": "公",
-		"shape": "小型",
-		"color": "黑色",
-		"age": "成年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "臘腸狗",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "哈士奇",
-		"type": "狗",
-		"gender": "母",
-		"shape": "中型",
-		"color": "黑白色",
-		"age": "成年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "哈士奇",
-		"type": "狗",
-		"gender": "母",
-		"shape": "大型",
-		"color": "黑白色",
-		"age": "老年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "米克斯",
-		"type": "狗",
-		"gender": "母",
-		"shape": "中型",
-		"color": "黃色",
-		"age": "成年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "米克斯",
-		"type": "狗",
-		"gender": "公",
-		"shape": "中型",
-		"color": "黃色",
-		"age": "成年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "瑪爾基斯",
-		"type": "狗",
-		"gender": "公",
-		"shape": "小型",
-		"color": "白色",
-		"age": "老年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "博美",
-		"type": "狗",
-		"gender": "母",
-		"shape": "小型",
-		"color": "白色",
-		"age": "成年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "博美",
-		"type": "狗",
-		"gender": "母",
-		"shape": "小型",
-		"color": "白色",
-		"age": "成年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "哈士奇",
-		"type": "狗",
-		"gender": "母",
-		"shape": "中型",
-		"color": "黑白色",
-		"age": "成年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "米克斯",
-		"type": "狗",
-		"gender": "公",
-		"shape": "中型",
-		"color": "黃白色",
-		"age": "成年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "德國狼犬",
-		"type": "狗",
-		"gender": "公",
-		"shape": "大型",
-		"color": "混色",
-		"age": "成年",
-		"date": "2021/5/24"
-	},
-	{
-		"breed": "米克斯",
-		"type": "狗",
-		"gender": "公",
-		"shape": "中型",
-		"color": "黑色",
-		"age": "幼年",
-		"date": "2021/5/24"
-	},
-	{
-		"name": "可可",
-		"breed": "美國短毛貓",
-		"type": "貓",
-		"gender": "公",
-		"shape": "中型",
-		"color": "黑白色",
-		"age": "成年",
-		"fixed": "已結紮",
-		"location": "台北市 中山區",
-		"contact": "ni1",
-		"phone": "0962087819",
-		"image": "https://34e72fc2cac1.ngrok.io/Animal/cat/103.jpg",
-		"date": "2021/5/24"
-	},
-	{
-		"name": "Kuma",
-		"breed": "柴犬",
-		"type": "狗",
-		"gender": "公",
-		"shape": "中型",
-		"color": "黑色",
-		"age": "成年",
 		"fixed": "未結紮",
-		"location": "台北市 文山區",
-		"contact": "James",
-		"phone": "0926685676",
-		"image": "https://34e72fc2cac1.ngrok.io/Animal/dog/31.jpg",
-		"date": "2021/5/24"
-	},
-	{
-		"name": "趴趴",
-		"breed": "牧羊犬",
-		"type": "狗",
-		"gender": "公",
-		"shape": "大型",
-		"color": "棕白色",
-		"age": "老年",
-		"fixed": "未結紮",
-		"location": "宜蘭縣 員山鄉",
-		"contact": "李亦淨",
-		"phone": "0968574664",
-		"image": "https://34e72fc2cac1.ngrok.io/Animal/dog/202.jpg",
-		"date": "2021/5/24"
-	},
-	{
-		"name": "班比",
-		"breed": "米克斯",
-		"type": "貓",
-		"gender": "公",
-		"shape": "中型",
-		"color": "橘色",
-		"age": "成年",
-		"fixed": "已結紮",
-		"location": "台中市 太平區",
-		"contact": "Naq",
-		"phone": "0985433483",
-		"image": "https://34e72fc2cac1.ngrok.io/Animal/cat/67.jpg",
-		"date": "2021/5/24"
-	},
-	{
-		"name": "班比",
-		"breed": "米克斯",
-		"type": "貓",
-		"gender": "公",
-		"shape": "中型",
-		"color": "橘色",
-		"age": "成年",
-		"fixed": "已結紮",
-		"location": "台中市 太平區",
-		"contact": "Naq",
-		"phone": "0985433483",
-		"image": "https://34e72fc2cac1.ngrok.io/Animal/cat/67.jpg",
-		"date": "2021/5/24"
-	},
-	{
-		"name": "班比",
-		"breed": "米克斯",
-		"type": "貓",
-		"gender": "公",
-		"shape": "中型",
-		"color": "橘色",
-		"age": "成年",
-		"fixed": "已結紮",
-		"location": "台中市 太平區",
-		"contact": "Naq",
-		"phone": "0985433483",
-		"image": "https://34e72fc2cac1.ngrok.io/Animal/cat/67.jpg",
+		"location": "台中市 梧棲區",
+		"contact": "陳沛慈",
+		"phone": "0953363357",
+		"place": "[object Object]",
+		"image": "https://a8c1cd483071.ngrok.io/Animal/dog/81.jpg",
 		"date": "2021/5/24"
 	}
 ]

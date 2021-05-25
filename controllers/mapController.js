@@ -2,10 +2,10 @@ const fs = require("fs");
 const path = require("path");
 //const MapData = require('../models/Map');
 const RTree = require("./RTree");
-
+const base = "https://115d92f74392.ngrok.io";
 const mapSearch = (req, res) => {
   try {
-    //console.log(req.body)
+    //console.log(req.body);
     let allBound = fs.readFileSync(
       path.join(__dirname, "../public/RTree.json"),
       "utf-8"
@@ -15,7 +15,7 @@ const mapSearch = (req, res) => {
     let nearMarks = [];
     let details = [];
     RTree.instruction.search(allBound, location, nearMarks, details);
-    console.log(details);
+    console.log(nearMarks);
     res.send({ places: nearMarks, details: details });
   } catch (error) {
     console.log(error);
@@ -28,36 +28,43 @@ const mapInsert = (req, res) => {
       path.join(__dirname, "../public/RTree.json"),
       "utf-8"
     );
-    let animalFileData = fs.readFileSync(
-      path.join(__dirname, "../public/Animal.json"),
-      "utf-8"
+    let allAnimal = JSON.parse(
+      fs.readFileSync(
+        path.join(__dirname, "../public/Animal/dog/dog.json"),
+        "utf-8"
+      )
     );
     let allBound = JSON.parse(allBoundFileData);
-    let animalData = JSON.parse(animalFileData);
     let new_detail = JSON.parse(req.body.detail);
+    console.log(allBound.nodesNum);
     new_detail["number"] = allBound.nodesNum;
-    animalData.push(new_detail);
+    new_detail["age"] = "成年";
+    new_detail["shape"] = "中型";
+    new_detail["color"] = "黑色";
+    new_detail["image"] = base;
+    new_detail["place"] = JSON.parse(req.body.location);
+    console.log(new_detail);
+    allAnimal.push(new_detail);
     let location = JSON.parse(req.body.location);
     let newBounds = RTree.instruction.insert(
       allBound,
       location,
-      allBound.nodesNum++
+      allBound.nodesNum++,
+      new_detail
     );
-
+    console.log(newBounds);
     let writeTree = JSON.stringify(newBounds, null, "\t");
-    let writeAnimal = JSON.stringify(animalData, null, "\t");
+    let writeAnimal = JSON.stringify(allAnimal, null, "\t");
     fs.writeFileSync(
       path.join(__dirname, "../public/RTree.json"),
       writeTree,
       "utf-8"
     );
     fs.writeFileSync(
-      path.join(__dirname, "../public/Animal.json"),
+      path.join(__dirname, "../public/Animal/dog/dog.json"),
       writeAnimal,
       "utf-8"
     );
-    // let root=allBound.find(bound=>bound.type==="root")
-    // RTree.instruction.insertDataBaseTree(allBound,allBound.length,root,location);
     res.send({ status: "OK" });
   } catch (error) {
     res.send({ status: "fail" });

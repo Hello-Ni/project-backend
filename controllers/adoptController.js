@@ -124,7 +124,9 @@ const getAllBreed = (req, res) => {
       path.join(__dirname, "../public/Animal/type.json"),
       "utf-8"
     );
+
     all_breed = JSON.parse(all_breed);
+    console.log(all_breed);
     res.send({ data: all_breed });
   } catch (error) {}
 };

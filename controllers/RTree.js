@@ -48,12 +48,12 @@ class Instruction {
         lat > parseFloat(location.bottom)
       ) {
         marks.push({ lng: lng, lat: lat });
+        console.log(detail);
         details.push(detail);
       }
     }
   }
-  insert(bounds, location, detail, index) {
-    console.log(index);
+  insert(bounds, location, index, detail) {
     let Rtree = new RTree();
     let x = parseFloat(location.longitude);
     let y = parseFloat(location.latitude);

@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const base = "https://3ca7697d2e33.ngrok.io";
+const base = "https://115d92f74392.ngrok.io";
 let allCat = fs.readFileSync(
   path.join(__dirname, "public/Animal/cat/cat.json")
 );
