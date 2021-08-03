@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const base = "https://115d92f74392.ngrok.io";
+const base = "https://ba7e2f98db77.ngrok.io";
 let allCat = fs.readFileSync(
   path.join(__dirname, "public/Animal/cat/cat.json")
 );
@@ -70,12 +70,19 @@ fs.writeFileSync(
 );
 
 let count = 0;
+function randomDate(start, end) {
+  return new Date(
+    start.getTime() + Math.random() * (end.getTime() - start.getTime())
+  ).toLocaleDateString();
+}
 
 allDog.forEach((dog, idx) => {
+  dog["date"] = randomDate(new Date(2017, 0, 1), new Date());
   dog["place"] = locations[count++];
   dog["image"] = `${base}/Animal/dog/${idx}.jpg`;
 });
 allCat.forEach((cat, idx) => {
+  cat["date"] = randomDate(new Date(2012, 0, 1), new Date());
   cat["place"] = locations[count++];
   cat["image"] = `${base}/Animal/cat/${idx}.jpg`;
 });

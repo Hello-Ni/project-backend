@@ -7,7 +7,7 @@ const crypto = require("crypto");
 const fs = require("fs");
 const mongodb = require("mongodb");
 const mongoose = require("mongoose");
-
+const formidable = require("formidable");
 //create express service
 const app = express();
 const port = 8000;
@@ -18,13 +18,15 @@ const accountRouter = require("./routers/accountRouter");
 const dbURI =
   "mongodb+srv://nihao:zrt05c4aa09@rtree.y7lh3.mongodb.net/MyDataBase?retryWrites=true&w=majority";
 const userTable = require("../backend/models/User");
+var multer = require("multer");
+var upload = multer();
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true });
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 // parse application/json
 app.use(bodyParser.json());
 //form 表單input必須加入name
-app.use(cors({ credentials: true, origin: "http://140.116.102.134:19000" }));
+app.use(cors({ credentials: true, origin: "http://localhost:8080" }));
 app.use(express.static("public"));
 //create mongpDB Client
 
@@ -49,6 +51,12 @@ app.get("/user", urlencodedParser, (req, res) => {
     .catch(() => {
       console.log("error");
     });
+});
+app.post("/test", upload.single("gid"), async (req, res) => {
+  let formData = req.body;
+  console.log(req.files);
+  res.status(200).send(formData);
+  //console.log(parseRes.fields.gid);
 });
 app.use("/maps", mapRouters);
 app.use("/adopt", adoptRouter);

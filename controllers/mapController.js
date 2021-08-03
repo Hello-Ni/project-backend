@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 //const MapData = require('../models/Map');
 const RTree = require("./RTree");
-const base = "https://115d92f74392.ngrok.io";
+const base = "https://542b3bc41347.ngrok.io";
 const mapSearch = (req, res) => {
   try {
     //console.log(req.body);
@@ -40,8 +40,8 @@ const mapInsert = (req, res) => {
     new_detail["number"] = allBound.nodesNum;
     new_detail["age"] = "成年";
     new_detail["shape"] = "中型";
-    new_detail["color"] = "黑色";
-    new_detail["image"] = base;
+    new_detail["color"] = "白色";
+    new_detail["image"] = base + "/Animal/dog/212.jpg";
     new_detail["place"] = JSON.parse(req.body.location);
     console.log(new_detail);
     allAnimal.push(new_detail);
@@ -116,12 +116,28 @@ const showRTree = (req, res) => {
 };
 const mapGetAllMarker = (req, res) => {
   console.log("create");
-  const data = fs.readFileSync(
-    path.join(__dirname, "../public/location3.json"),
-    "utf-8"
+  const dogs = JSON.parse(
+    fs.readFileSync(
+      path.join(__dirname, "../public/Animal/dog/dog.json"),
+      "utf-8"
+    )
   );
-  let locations = JSON.parse(data);
-  res.send({ data: locations });
+  const cats = JSON.parse(
+    fs.readFileSync(
+      path.join(__dirname, "../public/Animal/cat/cat.json"),
+      "utf-8"
+    )
+  );
+  let place = [];
+  let detail = [];
+  let data = [...dogs, ...cats];
+  data.forEach((e, i) => {
+    place.push(e.place);
+    detail.push(e);
+    delete detail[i].place;
+  });
+  console.log(place);
+  res.send({ place: place, detail: detail });
 };
 module.exports = {
   mapSearch,

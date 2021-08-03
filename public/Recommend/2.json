@@ -1,0 +1,98 @@
+[
+	{
+		"name": "鮑勃",
+		"breed": "臘腸狗",
+		"type": "狗",
+		"gender": "公",
+		"shape": "中型",
+		"color": "黃色",
+		"age": "老年",
+		"fixed": "已結紮",
+		"location": "高雄市 苓雅區",
+		"owner": "謝明修",
+		"phone": "0912571328",
+		"place": {
+			"lng": 120.422719,
+			"lat": 23.071807
+		},
+		"image": "https://542b3bc41347.ngrok.io/Animal/dog/205.jpg",
+		"date": "2018/4/15"
+	},
+    {
+		"name": "UNO",
+		"breed": "博美",
+		"type": "狗",
+		"gender": "公",
+		"shape": "小型",
+		"color": "白色",
+		"age": "成年",
+		"fixed": "未結紮",
+		"location": "屏東縣 內埔鄉",
+		"owner": "章愛梅",
+		"phone": "0926829036",
+		"place": {
+			"lng": 120.168873,
+			"lat": 23.266418
+		},
+		"image": "https://542b3bc41347.ngrok.io/Animal/dog/209.jpg",
+		"date": "2019/1/25"
+	},
+	{
+		"name": "阿噗",
+		"breed": "柯基",
+		"type": "狗",
+		"gender": "母",
+		"shape": "小型",
+		"color": "棕白色",
+		"age": "成年",
+		"fixed": "未結紮",
+		"location": "新北市 五股區",
+		"owner": "江小姐",
+		"phone": "0981638738",
+		"place": {
+			"lng": 120.131083,
+			"lat": 22.989685
+		},
+		"image": "https://542b3bc41347.ngrok.io/Animal/dog/3.jpg",
+		"date": "2019/9/21"
+	},
+	{
+		"name": "YUKI",
+		"breed": "瑪爾基斯",
+		"type": "狗",
+		"gender": "母",
+		"shape": "小型",
+		"color": "白色",
+		"age": "成年",
+		"fixed": "已結紮",
+		"location": "新北市 三重區",
+		"owner": "POPO",
+		"phone": "0961100933",
+		"place": {
+			"lng": 120.240867,
+			"lat": 23.00372
+		},
+		"image": "https://542b3bc41347.ngrok.io/Animal/dog/2.jpg",
+		"date": "2017/11/13"
+	},
+    {
+		"name": "JOJO",
+		"breed": "米克斯",
+		"type": "狗",
+		"gender": "母",
+		"shape": "小型",
+		"color": "黑色",
+		"age": "幼年",
+		"fixed": "未結紮",
+		"location": "台中市 大里區",
+		"owner": "張立穎",
+		"phone": "0988178596",
+		"place": {
+			"lng": 120.310844,
+			"lat": 23.202394
+		},
+		"image": "https://542b3bc41347.ngrok.io/Animal/dog/8.jpg",
+		"date": "2017/8/17"
+	}
+    
+]

@@ -4,7 +4,7 @@ const adoptController = require("../controllers/adoptController");
 router.post("/create", adoptController.createAnimal);
 router.post("/findAnimal", adoptController.findAnimal);
 router.post("/storeHistory", adoptController.storeHistory);
-router.get("/recommend", adoptController.recommend);
+router.post("/recommend", adoptController.recommend);
 router.get("/getAllBreed", adoptController.getAllBreed);
 
 module.exports = router;

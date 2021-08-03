@@ -1,0 +1,97 @@
+[
+    {
+		"name": "鮑勃",
+		"breed": "臘腸狗",
+		"type": "狗",
+		"gender": "公",
+		"shape": "中型",
+		"color": "黃色",
+		"age": "老年",
+		"fixed": "已結紮",
+		"location": "高雄市 苓雅區",
+		"owner": "謝明修",
+		"phone": "0912571328",
+		"place": {
+			"lng": 120.422719,
+			"lat": 23.071807
+		},
+		"image": "https://542b3bc41347.ngrok.io/Animal/dog/205.jpg",
+		"date": "2018/4/15"
+	},
+	{
+		"name": "黑虎",
+		"breed": "臘腸狗",
+		"type": "狗",
+		"gender": "母",
+		"shape": "中型",
+		"color": "黃色",
+		"age": "幼年",
+		"fixed": "未結紮",
+		"location": "新竹市 香山區",
+		"owner": "Yang Yang",
+		"phone": "0903130539",
+		"place": {
+			"lng": 120.394343,
+			"lat": 23.278851
+		},
+		"image": "https://542b3bc41347.ngrok.io/Animal/dog/206.jpg",
+		"date": "2020/4/27"
+	},
+	{
+		"name": "小翠",
+		"breed": "臘腸狗",
+		"type": "狗",
+		"gender": "母",
+		"shape": "中型",
+		"color": "白色",
+		"age": "成年",
+		"fixed": "未結紮",
+		"location": "台中市 大里區",
+		"owner": "外星人",
+		"phone": "0906164950",
+		"place": {
+			"lng": 120.266392,
+			"lat": 23.072033
+		},
+		"image": "https://542b3bc41347.ngrok.io/Animal/dog/207.jpg",
+		"date": "2021/3/29"
+	},
+	{
+		"name": "小巴",
+		"breed": "臘腸狗",
+		"type": "狗",
+		"gender": "公",
+		"shape": "中型",
+		"color": "黃色",
+		"age": "成年",
+		"fixed": "未結紮",
+		"location": "屏東縣 內埔鄉",
+		"owner": "章愛梅",
+		"phone": "0926829036",
+		"place": {
+			"lng": 120.143325,
+			"lat": 23.318813
+		},
+		"image": "https://542b3bc41347.ngrok.io/Animal/dog/208.jpg",
+		"date": "2017/9/17"
+	},	
+    {
+		"name": "Lala",
+		"breed": "臘腸狗",
+		"type": "狗",
+		"gender": "母",
+		"shape": "小型",
+		"color": "茶色",
+		"age": "成年",
+		"fixed": "未結紮",
+		"location": "台中市 梧棲區",
+		"owner": "陳沛慈",
+		"phone": "0953363357",
+		"place": {
+			"lng": 120.420707,
+			"lat": 23.158407
+		},
+		"image": "https://542b3bc41347.ngrok.io/Animal/dog/81.jpg",
+		"date": "2017/11/7"
+	}
+]

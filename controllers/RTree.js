@@ -6,7 +6,6 @@ class Instruction {
     let Rtree = new RTree();
 
     data.forEach((d, idx) => {
-      console.log(idx);
       let flag = Rtree.insertTree(
         rootBound,
         d.place.lng,

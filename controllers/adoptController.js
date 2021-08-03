@@ -1,9 +1,11 @@
+const { json } = require("body-parser");
 const { randomInt } = require("crypto");
 const fs = require("fs");
 const path = require("path");
 const AnimalData = require("../models/Animal");
 const userData = require("../models/User");
 const { use } = require("../routers/MapRouters");
+
 const createAnimal = (req, res) => {
   try {
     const animal_data = new AnimalData(req.body);
@@ -32,26 +34,38 @@ const storeHistory = (req, res) => {
   );
 };
 const recommend = (req, res) => {
-  let allDog = JSON.parse(
-    fs.readFileSync(
-      path.join(__dirname, `../public/Animal/dog/dog.json`),
-      "utf-8"
-    )
-  );
-  let allCat = JSON.parse(
-    fs.readFileSync(
-      path.join(__dirname, `../public/Animal/cat/cat.json`),
-      "utf-8"
-    )
-  );
-  let animals = [...allDog, ...allCat];
-  let result = [];
-  for (let i = 0; i < 5; ++i) {
-    let idx = Math.floor(Math.random() * animals.length);
-    result.push(animals[idx]);
+  console.log(req.body.data);
+  let count = req.body.data;
+  if (count <= 0 || count > 3) {
+    let allDog = JSON.parse(
+      fs.readFileSync(
+        path.join(__dirname, `../public/Animal/dog/dog.json`),
+        "utf-8"
+      )
+    );
+    let allCat = JSON.parse(
+      fs.readFileSync(
+        path.join(__dirname, `../public/Animal/cat/cat.json`),
+        "utf-8"
+      )
+    );
+    let animals = [...allDog, ...allCat];
+    let result = [];
+    for (let i = 0; i < 5; ++i) {
+      let idx = Math.floor(Math.random() * animals.length);
+      result.push(animals[idx]);
+    }
+    res.send({ data: result });
+  } else {
+    console.log("true");
+    let recommend = JSON.parse(
+      fs.readFileSync(
+        path.join(__dirname, `../public/Recommend/${count}.json`),
+        "utf-8"
+      )
+    );
+    res.send({ data: recommend });
   }
-  console.log(result);
-  res.send({ data: result });
 };
 const countWeight = () => {};
 const countScore = (total, history) => {
@@ -81,7 +95,7 @@ const countScore = (total, history) => {
 };
 const findAnimal = (req, res) => {
   try {
-    console.log(new Date().toLocaleDateString("zh-TW"));
+    //console.log(new Date().toLocaleDateString("zh-TW"));
     let history = fs.readFileSync(
       path.join(__dirname, `../public/history.json`),
       "utf-8"
@@ -126,7 +140,7 @@ const getAllBreed = (req, res) => {
     );
 
     all_breed = JSON.parse(all_breed);
-    console.log(all_breed);
+    //console.log(all_breed);
     res.send({ data: all_breed });
   } catch (error) {}
 };
