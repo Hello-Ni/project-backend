@@ -1,6 +1,7 @@
 # the Lost Pet Map Backend
 the CSIE project in junior
-## 
+## the programming tool
+nodejs + expree + mongoDB
 ```
 npm install
 ```
